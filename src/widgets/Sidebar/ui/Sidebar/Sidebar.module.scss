@@ -4,10 +4,13 @@
   background-color: var(--bg-color-inverted);
   position: relative;
   transition: width 0.3s ease-in-out;
+  display: flex;;
 }
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+  display: flex;
+  justify-content: right;
 }
 
 .collapsed:hover {
@@ -17,7 +20,8 @@
 .switchers {
   position: absolute;
   bottom: 20px;
+  right: 5px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
