@@ -4,7 +4,9 @@ import {AppRouter} from "app/providers/AppRuoter";
 import {Navbar} from "widgets/Navbar";
 import {useTheme} from "app/providers/ThemeProvider";
 import {Sidebar} from "widgets/Sidebar";
-import React from "react";
+import React, {Suspense} from "react";
+import {Button, ButtonTheme} from "shared/ui/Button/Button";
+import {useTranslation} from "react-i18next";
 
 export const App = () => {
 
@@ -12,11 +14,13 @@ export const App = () => {
 
   return (
     <div className={classNames('app', {},[theme])}>
-      <Navbar />
-      <div className='content-page'>
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback={<div className='page-wrapper'>Loading...</div>}>
+        <Navbar />
+        <div className='content-page'>
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   )
 }
