@@ -5,13 +5,19 @@ import { Navbar } from 'widgets/Navbar';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Sidebar } from 'widgets/Sidebar';
 import React, { Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const App = () => {
     const { theme } = useTheme();
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Suspense fallback={<div className="page-wrapper">Loading...</div>}>
+            <Suspense fallback={(
+                <div className="page-wrapper">
+                    Загрузка...
+                </div>
+            )}
+            >
                 <Navbar />
                 <div className="content-page">
                     <Sidebar />
