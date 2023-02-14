@@ -4,8 +4,7 @@ import { AppRouter } from 'app/providers/AppRuoter';
 import { Navbar } from 'widgets/Navbar';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Sidebar } from 'widgets/Sidebar';
-import React, { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { Suspense, useEffect } from 'react';
 
 export const App = () => {
     const { theme } = useTheme();

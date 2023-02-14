@@ -4,5 +4,7 @@
     "Загрузка...": "Loading...",
     "Страница не найдена": "Page not found",
     "Главная": "Main",
-    "О сайте": "About"
+    "О сайте": "About",
+    "Что-то пошло не так": "Something went wrong.",
+    "Обновить страницу": "Refresh page"
 }
