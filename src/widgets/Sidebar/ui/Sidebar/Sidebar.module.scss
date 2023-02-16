@@ -1,26 +1,26 @@
 .Sidebar {
-  height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width);
-  background-color: var(--bg-color-inverted);
-  position: relative;
-  transition: width 0.3s ease-in-out;
-  display: flex;
+    height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width);
+    background-color: var(--bg-color-inverted);
+    position: relative;
+    transition: width 0.3s ease-in-out;
+    display: flex;
 }
 
 .collapsed {
-  width: var(--sidebar-width-collapsed);
-  display: flex;
-  justify-content: right;
+    width: var(--sidebar-width-collapsed);
+    display: flex;
+    justify-content: right;
 }
 
 .collapsed:hover {
-  width: calc(var(--sidebar-width-collapsed) + 2vw);
+    width: calc(var(--sidebar-width-collapsed) + 2vw);
 }
 
 .switchers {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
