@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 jobs:
   Pipeline:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [ 17.x ]
@@ -32,3 +32,9 @@ jobs:
 
       - name: unit testing
         run: npm run test:unit
+
+      - name: building storybook
+        run: npm run storybook:build
+
+      - name: ui testing
+        run: brew install graphicsmagick && npx loki --requireReference update --reactUri file:./storybook-static
