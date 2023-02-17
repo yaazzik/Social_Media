@@ -2,15 +2,24 @@
 
 :root {
     --font-family-main: "Press Start 2P", cursive;
-    --font-size-m: 16px;
-    --font-line-m: 24px;
+
+    // Small size
+    --font-size-s: 12px;
+    --font-line-s: 20px;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+    // Medium size
+    --font-size-m: 18px;
+    --font-line-m: 26px;
     --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-    --font-size-l: 24px;
-    --font-line-l: 32px;
+
+    // Large size
+    --font-size-l: 44px;
+    --font-line-l: 52px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
     // Для вычисления размеров элементов
     --navbar-height: 50px;
-    --sidebar-width: 10vw;
-    --sidebar-width-collapsed: 2vw;
+    --sidebar-width: 200px;
+    --sidebar-width-collapsed: 70px;
 }

@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/decorators/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
-import { Button, ButtonTheme } from './Button';
+import { Button, ButtonSize, ButtonTheme } from './Button';
 
 export default {
     title: 'shared/Button',
@@ -45,3 +45,105 @@ OutlinedDark.args = {
     theme: ButtonTheme.OUTLINE,
 };
 OutlinedDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const SmallSizeSquarePrimary = Template.bind({});
+SmallSizeSquarePrimary.args = {
+    children: 'S',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.S,
+    square: true,
+};
+
+export const SmallSizeSquarePrimaryDark = Template.bind({});
+SmallSizeSquarePrimaryDark.args = {
+    children: 'S',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.S,
+    square: true,
+};
+SmallSizeSquarePrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const MediumSizeSquarePrimary = Template.bind({});
+MediumSizeSquarePrimary.args = {
+    children: 'M',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.M,
+    square: true,
+};
+
+export const MediumSizeSquarePrimaryDark = Template.bind({});
+MediumSizeSquarePrimaryDark.args = {
+    children: 'M',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.M,
+    square: true,
+};
+MediumSizeSquarePrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const LargeSizeSquarePrimary = Template.bind({});
+LargeSizeSquarePrimary.args = {
+    children: 'L',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.L,
+    square: true,
+};
+
+export const LargeSizeSquarePrimaryDark = Template.bind({});
+LargeSizeSquarePrimaryDark.args = {
+    children: 'L',
+    theme: ButtonTheme.BACKGROUND_PRIMARY,
+    size: ButtonSize.L,
+    square: true,
+};
+LargeSizeSquarePrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const SmallSizeSquareSecondary = Template.bind({});
+SmallSizeSquareSecondary.args = {
+    children: 'S',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.S,
+    square: true,
+};
+
+export const SmallSizeSquareSecondaryDark = Template.bind({});
+SmallSizeSquareSecondaryDark.args = {
+    children: 'S',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.S,
+    square: true,
+};
+SmallSizeSquareSecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const MediumSizeSquareSecondary = Template.bind({});
+MediumSizeSquareSecondary.args = {
+    children: 'M',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.M,
+    square: true,
+};
+
+export const MediumSizeSquareSecondaryDark = Template.bind({});
+MediumSizeSquareSecondaryDark.args = {
+    children: 'M',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.M,
+    square: true,
+};
+MediumSizeSquareSecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const LargeSizeSquareSecondary = Template.bind({});
+LargeSizeSquareSecondary.args = {
+    children: 'L',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.L,
+    square: true,
+};
+
+export const LargeSizeSquareSecondaryDark = Template.bind({});
+LargeSizeSquareSecondaryDark.args = {
+    children: 'L',
+    theme: ButtonTheme.BACKGROUND_SECONDARY,
+    size: ButtonSize.L,
+    square: true,
+};
+LargeSizeSquareSecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
