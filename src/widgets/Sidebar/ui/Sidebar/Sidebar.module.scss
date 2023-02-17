@@ -7,20 +7,58 @@
     display: flex;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-    display: flex;
-    justify-content: right;
-}
-
-.collapsed:hover {
-    width: calc(var(--sidebar-width-collapsed) + 2vw);
-}
-
 .switchers {
     position: absolute;
     bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.collapseBtn {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 40px 0 80px 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+}
+
+.link {
+    margin-left: 10px;
+    visibility: visible;
+    transition: visibility 0.3s steps(1, end);
+}
+
+.icon {
+    fill: var(--secondary-color);
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        flex-direction: column;
+    }
+
+    .link {
+        visibility: hidden;
+        transition: visibility 0.3s steps(1, start);
+    }
+}
+
+.collapsed:hover {
+    width: calc(var(--sidebar-width-collapsed) + 25px);
 }
