@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTheme } from 'app/providers/ThemeProvider';
+import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import LightIcon from 'shared/assets/icons/LightThemeIcon.svg';
 import DarkIcon from 'shared/assets/icons/DarkThemeIcon.svg';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
@@ -16,7 +16,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
             onClick={toggleTheme}
             theme={ButtonTheme.CLEAR}
         >
-            {theme === 'light' ? <LightIcon /> : <DarkIcon />}
+            {theme === Theme.LIGHT ? <LightIcon /> : <DarkIcon />}
         </Button>
     );
 };
