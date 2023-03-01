@@ -7,5 +7,7 @@
     "О сайте": "About",
     "Что-то пошло не так": "Something went wrong.",
     "Обновить страницу": "Refresh page",
-    "Войти": "Log In"
+    "Войти": "Log In",
+    "Имя пользователя" : "Username",
+    "Пароль" : "Password"
 }
