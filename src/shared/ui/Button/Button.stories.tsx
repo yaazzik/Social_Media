@@ -147,3 +147,10 @@ LargeSizeSquareSecondaryDark.args = {
     square: true,
 };
 LargeSizeSquareSecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: 'disabled',
+    theme: ButtonTheme.OUTLINE,
+    disabled: true,
+};

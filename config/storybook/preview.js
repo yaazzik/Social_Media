@@ -3,6 +3,7 @@ import { StyleDecorator } from '../../src/shared/config/storybook/decorators/Sty
 import { ThemeDecorator } from '../../src/shared/config/storybook/decorators/ThemeDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider/lib/ThemeContext';
 import { RouteDecorator } from '../../src/shared/config/storybook/decorators/RouteDecorator';
+import { StoreDecorator } from '../../src/shared/config/storybook/decorators/StoreDecorator';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },

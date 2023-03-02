@@ -60,3 +60,8 @@
     height: var(--font-line-l);
     width: var(--font-line-l);
 }
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
