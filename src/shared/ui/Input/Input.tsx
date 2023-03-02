@@ -51,6 +51,8 @@ export const Input = memo((props:InputProps) => {
         setCaretPosition(target.selectionStart || 0);
     };
 
+    const INPUT_MAX_LENGTH = 21;
+
     return (
         <div className={classNames(cls.InputWrapper, {}, [className])}>
             {placeholder
@@ -70,7 +72,13 @@ export const Input = memo((props:InputProps) => {
                     && (
                         <span
                             className={cls.caret}
-                            style={{ left: `${caretPosition}ch` }}
+                            style={
+                                {
+                                    left: `${caretPosition <= INPUT_MAX_LENGTH
+                                        ? caretPosition
+                                        : INPUT_MAX_LENGTH}ch`,
+                                }
+                            }
                         />
                     ) }
             </div>
