@@ -1,9 +1,14 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import './Spinner.scss';
+import cls from './Spinner.module.scss';
 
+export enum SpinnerTheme {
+    PRIMARY = 'ldsDualRingPrimary',
+    SECONDARY = 'ldsDualRingSecondary'
+}
 interface SpinnerProps {
   className?: string;
+  theme?: SpinnerTheme;
 }
-export const Spinner = ({ className }:SpinnerProps) => (
-    <div className={classNames('lds-dual-ring', {}, [className])} />
+export const Spinner = ({ className, theme = SpinnerTheme.PRIMARY }:SpinnerProps) => (
+    <div className={classNames(cls[theme], {}, [className])} />
 );
