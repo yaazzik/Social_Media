@@ -38,7 +38,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'max-len': ['warn', {
             ignoreComments: true,
-            code: 100,
+            code: 140,
         }],
         'no-console': 'off',
         'react-hooks/rules-of-hooks': 'error', // Проверяем правила хуков
