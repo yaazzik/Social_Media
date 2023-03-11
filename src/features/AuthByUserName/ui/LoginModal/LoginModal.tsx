@@ -17,7 +17,7 @@ export const LoginModal = ({ className, isOpen, onClose }:LoginModalProps) => (
         className={classNames('', {}, [className])}
     >
         <Suspense fallback={<Spinner theme={SpinnerTheme.SECONDARY} />}>
-            <LoginFormAsync />
+            <LoginFormAsync onSuccess={onClose} />
         </Suspense>
     </Modal>
 );

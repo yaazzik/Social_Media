@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUserName';
 import { getUserAuthData, userActions } from 'entities/User';
@@ -10,7 +10,7 @@ import cls from './Navbar.module.scss';
 interface NavbarProps {
   className?: string
 }
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = memo(({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const dispatch = useDispatch();
     const [isAuthModal, setIsAuthModal] = useState(false);
@@ -56,4 +56,4 @@ export const Navbar = ({ className }: NavbarProps) => {
             </div>
         </div>
     );
-};
+});

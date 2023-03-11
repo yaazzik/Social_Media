@@ -31,6 +31,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Mark",
+    "lastname": "Glebov",
+    "age": 22,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Saint-Petersburg",
+    "username": "admin",
+    "avatar": "https://messenge.ru/wp-content/cache/thumb/d2/d050ece6dd983d2_730x440.jpg"
   }
 }

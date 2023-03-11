@@ -1,5 +1,4 @@
-import { FC, ReactNode, useEffect } from 'react';
-import { loginReducer } from 'features/AuthByUserName/model/slice/loginSlice';
+import { FC, useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 import { StoreWithReducerManager } from 'app/providers/StoreProvider';
 import { StateSchemaKeys } from 'app/providers/StoreProvider/config/StateSchema';
@@ -12,7 +11,7 @@ export type ReducerList = {
 type ReducersListEntry = [StateSchemaKeys, Reducer];
 
 interface DynamicModuleLoaderProps {
-    name: StateSchemaKeys;
+    name?: StateSchemaKeys;
     reducers: ReducerList;
     removeOnUnmount?: boolean;
 }
@@ -33,7 +32,7 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
 
         return () => {
             if (removeOnUnmount) {
-                Object.entries(reducers).forEach(([name, reducer]: ReducersListEntry) => {
+                Object.entries(reducers).forEach(([name]: ReducersListEntry) => {
                     store.reducerManager.remove(name);
                     dispatch({ type: `@DESTROY ${name} reducer` });
                 });
