@@ -11,7 +11,7 @@ interface ProfilePageProps {
   className?: string;
 }
 const ProfilePage = ({ className }:ProfilePageProps) => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('profilePage');
 
     return (
         <DynamicModuleLoader reducers={reducers} removeOnUnmount>
