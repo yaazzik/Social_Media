@@ -6,3 +6,11 @@
     align-items: center;
     flex-direction: column;
 }
+
+.reloadBtn {
+    margin-top: 15px;
+}
+
+.reloadBtn:hover {
+    background-color: var(--primary-color);
+}

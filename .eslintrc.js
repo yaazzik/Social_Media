@@ -40,6 +40,7 @@ module.exports = {
             ignoreComments: true,
             code: 140,
         }],
+        'no-undef': 'off',
         'no-console': 'off',
         'react-hooks/rules-of-hooks': 'error', // Проверяем правила хуков
         'react-hooks/exhaustive-deps': 'error', // Проверяем зависимости эффекта
