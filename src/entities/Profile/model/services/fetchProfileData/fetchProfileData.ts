@@ -3,7 +3,7 @@ import { ThunkConfig } from 'app/providers/StoreProvider';
 import { ProfileType } from '../../types/profile';
 
 export const fetchProfileData = createAsyncThunk<ProfileType, void, ThunkConfig<string>>(
-    'profile/fetchProfileData',
+    'profile/fetch ProfileData',
     async (_, thunkAPI) => {
         const { extra, rejectWithValue } = thunkAPI;
         try {

@@ -1,6 +1,6 @@
 import { CounterSchema } from 'entities/Counter';
 import { UserSchema } from 'entities/User';
-import { LoginSchema } from 'features/AuthByUserName';
+import { LoginSchema } from 'features/AuthByUsername';
 import {
     AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
@@ -37,4 +37,5 @@ export interface ThunkExtraArgs {
 export interface ThunkConfig<T> {
     rejectValue: T;
     extra: ThunkExtraArgs;
+    state: StateSchema;
 }

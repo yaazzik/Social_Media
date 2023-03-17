@@ -1,7 +1,7 @@
 .InputWrapper {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     justify-content: start;
 }
 
@@ -19,6 +19,10 @@
 
 .placeholder {
     margin-right: 5px;
+}
+
+.readonly {
+    opacity: 0.8;
 }
 
 .caretWrapper {

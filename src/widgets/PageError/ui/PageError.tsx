@@ -11,7 +11,7 @@ export const PageError = ({ className }:PageErrorProps) => {
 
     return (
         <div className={classNames(cls.PageError, {}, [className])}>
-            <h1>{t('Что-то пошло не так.')}</h1>
+            <h1>{t('Что-то пошло не так')}</h1>
             <Button
                 theme={
                     ButtonTheme.OUTLINE
