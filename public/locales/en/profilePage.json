@@ -13,5 +13,14 @@
   "Город": "City",
   "Ссылка на аватар": "Avatar link",
   "Ошибка при загрузке профиля": "Profile loading error",
-  "Попробуйте обновить страницу": "Try to refresh the page"
+  "Попробуйте обновить страницу": "Try to refresh the page",
+  "Неверное имя пользователя": "Incorrect username",
+  "Неверное имя": "Incorrect name",
+  "Некорректно указан город": "Incorrect city",
+  "Некорректно указан возраст": "Incorrect age",
+  "Некорректно указана страна": "Incorrect country",
+  "Некорректно указана валюта": "Incorrect currency",
+  "Некорректно указана ссылка на аватар": "Incorrect avatar link",
+  "Нет данных": "No data",
+  "Ошибка сервера": "Server error"
 }
