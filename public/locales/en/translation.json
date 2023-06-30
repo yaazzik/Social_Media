@@ -14,5 +14,7 @@
   "Страна": "Country",
   "Валюта": "Currency",
   "Авторизация": "Authorization",
-  "Выйти": "Logout"
+  "Выйти": "Logout",
+  "Ошибка": "Error",
+  "Статьи": "Articles"
 }

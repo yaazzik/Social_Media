@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+pre {
+    font: var(--font-code) !important;
+}
+
+.Code {
+    border: var(--code-border);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    background-color: var(--code-bg);
+}
+
+.text {
+    color: #000;
+    overflow-x: auto;
+    display: block;
+}
+
+.icon {
+    fill: #fff;
+    stroke: #000;
+    margin-left: 5px;
+    scale: 1.2;
+
+    :hover {
+        stroke: green;
+    }
+}
+
+.copyBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font: var(--font-s) !important;
+    color: #000;
+    display: flex;
+    align-items: center;
+}

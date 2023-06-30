@@ -1,8 +1,6 @@
 .LoginForm {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     padding: 0 20px;
@@ -15,6 +13,13 @@
 }
 
 .loginInput {
-    margin-top: 10px;
     margin-right: auto;
+}
+
+.inputWrapper {
+    margin-top: 10px;
+}
+
+.errorMsg {
+    margin-top: 20px;
 }

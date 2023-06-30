@@ -1,8 +1,6 @@
 .InputWrapper {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: start;
 }
 
 .Input {
@@ -11,7 +9,6 @@
     background: transparent;
     color: transparent;
     text-shadow: 0 0 0 var(--primary-color);
-    margin-bottom: 0.6rem;
 
     &:focus {
         outline: none;
