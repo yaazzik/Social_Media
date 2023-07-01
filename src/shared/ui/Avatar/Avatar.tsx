@@ -12,7 +12,8 @@ interface AvatarProps {
 export const Avatar = (props:AvatarProps) => {
     const {
         className,
-        src,
+        src = 'https://img2.freepng.ru/20180710/rxs/kisspng-computer-icons-'
+            + 'anonymous-avatar-clip-art-anonymous-icon-5b447c8a9da205.3161285015312149866457.jpg',
         alt,
         size,
     } = props;

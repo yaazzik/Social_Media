@@ -90,19 +90,19 @@
   "comments": [
     {
       "id": "1",
-      "text": "some comment",
+      "text": "I want more",
       "articleId": "1",
       "userId": "1"
     },
     {
       "id": "2",
-      "text": "some comment 2",
+      "text": "Bad :'(",
       "articleId": "1",
       "userId": "1"
     },
     {
       "id": "3",
-      "text": "some comment 3",
+      "text": "Nice!",
       "articleId": "1",
       "userId": "1"
     }
@@ -111,7 +111,14 @@
     {
       "id": 1,
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
+    },
+    {
+      "id": 2,
+      "username": "nico",
+      "password": "123",
+      "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
     }
   ],
   "profile": {
