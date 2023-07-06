@@ -3,6 +3,8 @@ import { memo } from 'react';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Text } from 'shared/ui/Text/ui/Text';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import cls from './CommentItem.module.scss';
 import { Comment } from '../../model/types/comment';
 
@@ -33,14 +35,17 @@ export const CommentItem = memo((props: CommentItemProps) => {
 
     return (
         <div className={classNames(cls.CommentItem, {}, [className])}>
-            <div className={cls.header}>
-                {
-                    comment.user.avatar
-                        ? <Avatar src={comment.user.avatar} className={cls.avatar} size="40px" />
-                        : <Avatar className={cls.avatar} size="40px" />
-                }
-                <Text title={comment.user.username} />
-            </div>
+            <AppLink to={`${RoutePath.profile}${comment.user.id}`}>
+                <div className={cls.header}>
+                    {
+                        comment.user.avatar
+                            ? <Avatar src={comment.user.avatar} className={cls.avatar} size="40px" />
+                            : <Avatar className={cls.avatar} size="40px" />
+                    }
+                    <Text title={comment.user.username} />
+                </div>
+            </AppLink>
+
             <Text text={comment.text} />
         </div>
     );

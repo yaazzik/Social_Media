@@ -24,7 +24,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -105,30 +107,104 @@
       "text": "Nice!",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "123",
+      "id": "QmJ2O6c"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "123",
+      "id": "VK5kSxS"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "123",
+      "id": "uIdCILo"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "123",
+      "id": "yVoqeh7"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "123",
+      "id": "l0qyiBv"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "Good!",
+      "id": "a9mKkdo"
+    },
+    {
+      "articleId": "1",
+      "userId": 1,
+      "text": "Hello",
+      "id": "YS-aKA4"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Hola",
+      "id": "opUOR2P"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "SCBQgF6"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "321",
+      "id": "NOPTofp"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "123",
       "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "nico",
       "password": "123",
-      "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
+      "avatar": "https://wallpaperaccess.com/full/4595689.jpg"
     }
   ],
-  "profile": {
-    "firstname": "Russkiy",
-    "lastname": "Luka",
-    "age": 22,
-    "currency": "EUR",
-    "country": "CL",
-    "city": "Saint-Petersburg",
-    "username": "Karotish",
-    "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "Rus",
+      "lastname": "Luka",
+      "age": 22,
+      "currency": "EUR",
+      "country": "CL",
+      "city": "Saint-Petersburg",
+      "username": "Karotish",
+      "avatar": "https://www.computerhope.com/jargon/g/guest-user.png"
+    },
+    {
+      "id": "2",
+      "username": "Hassan",
+      "avatar": "https://wallpaperaccess.com/full/4595689.jpg",
+      "city": "Boston",
+      "currency": "USD",
+      "country": "USA",
+      "age": 23,
+      "firstname": "Ellie",
+      "lastname": "Heisenberg"
+    }
+  ]
 }

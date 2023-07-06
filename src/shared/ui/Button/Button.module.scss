@@ -37,6 +37,19 @@
     border: none;
 }
 
+.submit {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background: none;
+    transition: background, color 0.5s;
+}
+
+.submit:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
 .square {
     padding: 0;
 }

@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
+import { memo, useCallback, useEffect } from 'react';
 import { ArticleDetails } from 'entities/Article';
 import { useParams } from 'react-router-dom';
 import { Text, TextSize, TextTheme } from 'shared/ui/Text/ui/Text';
@@ -12,10 +12,9 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import {
     fetchCommentsByArticleId,
 } from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
-import {
-    getArticleDetailsCommentError,
-    getArticleDetailsCommentIsLoading,
-} from '../../model/selectors/comments';
+import { AddCommentForm } from 'features/AddCommentForm';
+import { addCommentForArticle } from 'pages/ArticleDetailsPage/model/services/addCommentForArticle/addCommentForArticle';
+import { getArticleDetailsCommentIsLoading } from 'pages/ArticleDetailsPage/model/selectors/comments';
 import { articleDetailsCommentReducer, getArticleComments } from '../../model/slice/ArticleDetailsCommentSlice';
 import cls from './ArticleDetailsPage.module.scss';
 
@@ -31,10 +30,14 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
     } = props;
     const { t } = useTranslation('articleDetailsPage');
     const { id } = useParams<{id: string}>();
-    const comments = useSelector(getArticleComments.selectAll);
     const isLoading = useSelector(getArticleDetailsCommentIsLoading);
-    const error = useSelector(getArticleDetailsCommentError);
+    // const error = useSelector(getArticleDetailsCommentError);
     const dispatch = useAppDispatch();
+    const comments = useSelector(getArticleComments.selectAll);
+
+    const onSendComment = useCallback((text: string) => {
+        dispatch(addCommentForArticle(text));
+    }, [dispatch]);
 
     useInitialEffect(() => {
         dispatch(fetchCommentsByArticleId(id));
@@ -51,7 +54,8 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
             <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 <ArticleDetails id={id} />
                 <Text className={cls.comments} title={t('Комментарии')} size={TextSize.L} />
-                <CommentList comments={comments} />
+                <AddCommentForm onSendComment={onSendComment} className={cls.addComment} />
+                <CommentList isLoading={isLoading} comments={comments} />
             </div>
         </DynamicModuleLoader>
 

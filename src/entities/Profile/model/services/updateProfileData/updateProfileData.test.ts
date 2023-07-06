@@ -18,6 +18,7 @@ const data = {
     age: 23,
     firstname: 'Ellie',
     lastname: 'Heisenberg',
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {
