@@ -30,6 +30,7 @@ Light.decorators = [StoreDecorator({
             firstname: 'Test',
             lastname: 'Test',
             city: 'Test',
+            id: '1',
         },
     },
 })];
@@ -47,6 +48,7 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
             firstname: 'Test',
             lastname: 'Test',
             city: 'Test',
+            id: '1',
         },
     },
 })];
